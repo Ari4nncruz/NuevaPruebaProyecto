@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <!--ICONOS-->
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <link rel="icon" type="image/x-icon" href="imagenes/icono1.ico">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Cal&Arena</title>
+</head>
+
+<body>
+ 
+  <!--Encabezado-->
+  <header class="container-fluid bg-primary d-flex justify-content-center ">
+    <!--bg-primary le da un color en este caso primario y el otro es para centrar el contenido-->
+    <p class="text-light mb-0 p-2 fs-4">Transformamos Sueños en <span class="text-dark">Realidad</span></p>
+    <!--Mb margen borde / p: pading / fs-3 tamaño-->
+  </header>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light p-3" id="menu">
+    <img src="imagenes/cal&arenaLogo.png" alt="Logo" class="logo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="Index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sobreNosotros.html">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!--SLIDER-->
+  <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2500">
+        <img src="imagenes/img4.jpg" class="d-block w-100" alt="img1">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="imagenes/img3.jpg" class="d-block w-100" alt="img2">
+      </div>
+
+
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="imagenes/img1.jpg" class="d-block w-100" alt="img3">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2500">
+        <img src="imagenes/img2.jpg" class="d-block w-100" alt="img4">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<br><br>
+  <!--efecto parallax-->
+  <div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <img src="imagenes/casa-parallax.jpg" class="img-fluid efecto"  height="150px" alt="Imagen 1">
+        </div>
+        <div class="col-md-6 mx-auto">
+          <img src="https://www.frecom.com/wp-content/uploads/2021/09/construction-2578410_1920-1200x675.jpg" class="img-fluid efecto" height="100px"  alt="Imagen 1">
+      </div>
+    </div>
+</div>
+
+<!--INICIO-->
+
+  <section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto"
+    id="intro"> <!--W 50% es el ancho predefinido por bost/ el mx. auto es el margen horizontal automatico-->
+    <h1 class="p-3 fs-2 border-top border-3">SOMOS UNA EMPRESA DE INGENIERÍA CREADA Y DIRIGIDA POR PROFESIONALES DE LA
+      <br><span class="text-dark">CONSTRUCCIÓN<span />
+    </h1>
+    <p class="p-3  fs-4"> <!--FS es font size -->
+
+    </p>
+  </section>
+
+  <!--SERVICIOS-->
+  <header class="container-fluid bg-primary d-flex justify-content-center ">
+    <div class="container-fluid bg-primary d-flex justify-content-center p-0">
+      <p class="text-light mb-0 p-2 fs-4">Estas son algunas de nuestras <span class="text-dark" id="Servicios"></span></p>
+    </div>
+  </header>
+    <div class="image-row">
+      <div class="image-container">
+        <img src="imagenes/isidora.jpg" alt="Descripción de la imagen">
+        <div class="overlay">
+          <h2>Presa La Isidora – Azul</h2>
+          <p>Construcción de un embalse para mitigar las inundaciones que sufría la ciudad de Azul.</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="imagenes/california-8-posadas-nf.jpg" alt="Descripción de la imagen">
+        <div class="overlay">
+          <h2>SuperMercado California</h2>
+          <p>Estructura combinada metálica, hormigón premoldeada y hormigón in-situ</p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="imagenes/OCA.jpg" alt="Descripción de la imagen">
+        <div class="overlay">
+          <h2>Plaza Logistica OCA</h2>
+          <p>El centro de distribución actualmente cuenta con una primera etapa de 65.000 m²</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--Equipo e Imagenes con efectos -->
+  <div class="container-fluid w-75 m-auto text-center " id="equipos">
+    <h1 class="mb-5 fs-2">Equipo pequeño con <span class="text-dark">resultados Grandes</span>.</h1>
+  </div>
+
+  <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 700 px;">
+    <section class="section1" style="width: 100%;">
+      <img src="imagenes/imagen1.webp" alt="">
+      <img src="imagenes/imagen2.jpg" alt="">
+      <img src="imagenes/imagen3.jpeg" alt="">
+      <img src="imagenes/imagen5.jpg" alt="">
+      <img src="imagenes/imagen6.jpg" alt="">
+    </section>
+  </div>
+
+
+
+  <!--Mapa y Js-->
+
+
+
+  <section class="d-flex justify-content-center align-items-center">
+    <div id="local" class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.429472284777!2d-55.895832138837015!3d-27.36635660075787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be3415488761%3A0xbad9f36ada06c8a6!2sSan%20Lorenzo%2C%20Posadas%2C%20Misiones!5e0!3m2!1ses!2sar!4v1698973402728!5m2!1ses!2sar"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-md-12 mx-auto">
+              <div class="wrapper-local">
+                <h2>Ubicados en Posadas, Misiones</h2>
+                <h2 class="text-primary mb-4" id="typewriter"></h2>
+                <p class="fs-4 text-light">Elegimos Misiones para nuestra oficina con el objetivo de estar cerca de
+                  nuestros clientes. Estamos ubicados en el centro de la ciudad de Posadas, el corazón y el centro
+                  financiero de Misiones. <br><br><span class="text-primary">¡Visítenos y no se arrepentirán!</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--========================================================== -->
+  <!--FOOTER-->
+  <!--========================================================== -->
+
+
+  <footer class="bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Cal & Arena</h3>
+          <p>Más de 30 años manteniendo nuestros valores: <br>
+            Calidad profesional <br>
+            Ética empresarial <br>
+            Compromiso comercial</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Enlaces Rápidos</h4>
+          <ul class="list-unstyled">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="sobreNosotros.html">Acerca de nosotros</a></li>
+          
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-4">
+          <h4>Contacto</h4>
+          <address>
+            <p>Dirección: Calle San Lorenzo 4117 Posadas Misiones</p>
+            <p>Teléfono: (+54) 3765224769</p>
+            <p>Correo Electrónico: info@calyarena.com</p>
+          </address>
+        </div>
+      </div>
+      <div id="iconos">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="mapa.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb0CoMf9m23ZQyvkDVF4dfy1w-rNGW75k&callback=initMap"></script>
+</body>
+
+</html>

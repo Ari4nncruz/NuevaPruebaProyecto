@@ -1,0 +1,299 @@
+/*===============Propiedades Globales================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #C4C4C4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23a8a8a8' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%238c8c8c' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%23707070' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%23545454' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%23383838' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%231c1c1c' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%23000000' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    
+}
+.container-fluid {
+    width: 100%; /* Establece el ancho al 100% */
+    margin: 0; /* Asegura que no haya margen en el contenedor */
+  }
+
+ 
+.section1 {
+    display: flex;
+   
+   
+    width: 1200px;
+    height: 430px;
+  
+   
+}
+
+.section1 img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    margin: 0 auto; 
+}
+
+.section1 img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
+
+
+.logo {
+    max-width: 150px;  
+    display: block;  
+    margin: 0 auto;  
+    margin-top: -3%; 
+    margin-bottom:0%;
+}
+/*===================MENU==========================*/
+
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+    
+ }
+
+ #menu a {
+     color:#3f3f3f;
+     
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+
+.carousel-inner {
+    max-height: 40rem !important;
+}
+.carousel-caption{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center; 
+    
+}
+
+.image-container {
+    position: relative;
+    width: 400px; /* Ajusta el ancho de la imagen-container según tus necesidades */
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-container {
+    margin: 10px;
+  }
+  
+  .image-container img {
+    width: 400px; /* Ajusta el ancho deseado */
+    height: auto; /* Mantén la relación de aspecto */
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Color de fondo y opacidad del overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+
+
+
+
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+
+
+
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local  {
+    margin-top:100px;
+    
+    display:flex;
+    justify-content: center; 
+    padding-bottom: -20px; 
+}
+
+.mapa {
+    width:100%;
+    height:500px;
+}
+
+
+
+
+/*===========================SECCION EQUIPO==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
+
+/*=========================FOOTER================================*/
+/* Estilos generales del footer */
+footer {
+    background-color: #333; /* Color de fondo */
+    padding: 30px 0; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+  }
+  
+  /* Estilos para los títulos en el footer */
+  footer h3, footer h4 {
+    color: #fff; /* Color del texto */
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  footer a {
+    color: #0099FF; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilos para los enlaces en hover */
+  footer a:hover {
+    color: #35AEFF; /* Color en hover */
+  }
+  
+  /* Estilos para la dirección en el footer */
+  footer address {
+    font-style: normal; /* No cursiva */
+  }
+  
+  /* Estilos para la sección de enlaces rápidos */
+  footer .list-unstyled li {
+    padding: 5px 0; /* Espaciado interno entre elementos de la lista */
+  }
+  
+  /* Estilos para el container en el footer */
+  footer .container {
+    padding: 20px; /* Espaciado interno */
+  }
+  
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+
+
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+
+    
+    #img-equipo{
+        max-height:20rem !important;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+
+@media (max-width: 576px) {
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
+
+
+
+
